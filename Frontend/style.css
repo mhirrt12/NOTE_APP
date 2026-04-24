@@ -1,9 +1,53 @@
-li{
+*{
+    margin: 0;
+padding: 0;}
+body{
+    background-color: rgb(98, 177, 203);
+}h1{
+    text-align: center;
+    color: white;
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    /* margin: 100px 10px; */
+    box-shadow: 15px 10px 5px lightblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+#add{
+    margin-left: 350px;
+    margin-bottom:20px;
+}li{
     min-width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: white;
 }
 button{
-    padding: 0;
-    margin:0;
+    padding:5px;
+    margin:5px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 2px rgb(23, 118, 150);
+    background-color:  lightblue;
+    color: rgb(128, 108, 108);
+}
+button:hover{
+    background-color: azure;
+    color: black;
+     border: black solid 2px;
+    border-radius: 25%;
+    box-shadow: 20px 10px 15px 5px lightblue;
+}
+#notelist{
+    border: black solid 2px;
+    border-radius: 25%;
+    box-shadow: 20px 10px 15px 5px lightblue;
+    margin-left: 60px;
+    margin-right: 60px;
 }

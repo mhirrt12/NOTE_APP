@@ -24,7 +24,7 @@ function displayinfo(data){
     notes.innerHTML="";
     data.forEach(function(note){
         let li= document.createElement("li");
-        li.innerHTML =note.id+", "+note.note;
+        li.innerHTML =note.note;
         let btn=document.createElement("button");
         btn.innerHTML="Delete";
         let btn2=document.createElement("button");
