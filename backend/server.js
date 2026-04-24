@@ -16,6 +16,25 @@ app.post("/notes",(req,res)=>{
 app.get("/notes",(req,res)=>{
     res.json(notes);
 })
+app.delete("/notes/:id",(req,res)=>{
+     let noteId=parseInt(req.params.id);
+     notes=notes.filter(note=>note.id!==noteId);
+     res.json(notes);
+});
+app.put("/notes/:id", (req, res) => {
+
+    let noteId = parseInt(req.params.id);
+
+    for (let i = 0; i < notes.length; i++) {
+
+        if (notes[i].id === noteId) {
+            notes[i].note = req.body.note;
+        }
+
+    }
+
+    res.json(notes);
+});
 app.listen(3000,()=>{
     console.log("i'm listing on port 3000");
 });
